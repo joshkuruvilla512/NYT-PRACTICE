@@ -1,3 +1,7 @@
+// search: search term
+// limit: 1-10;
+// startYear: Year to start looking for articles
+// endYear: 
 function getArticleInfo(search, limit, startYear, endYear) {
 
     let startDate = startYear + "0101";
@@ -18,17 +22,12 @@ function getArticleInfo(search, limit, startYear, endYear) {
         console.log(response);
         let results = response.response.docs;
         let ret = [];
-    
         for(let i=0; i<results.length; i++) {
             ret.push({
-                headline: results[i].headline.main,
-                author: results[i].byline.original,
-                url: results[i].web_url,
-            });
-            
-            //console.log("HEADLINE = ", results[i].headline.main);
-            //console.log("BY = ", results[i].byline.original);
-            //console.log("URL = ", results[i].web_url);
+                headline:   results[i].headline.main,
+                author:     results[i].byline.original,
+                url:        results[i].web_url,
+            });      
             // Break the loop once we have enough results;
             if (ret.length == limit) {
                 break;
