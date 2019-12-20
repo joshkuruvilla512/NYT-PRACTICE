@@ -12,44 +12,46 @@
 </head>
 
 <body>
-    <div class="searchContainer" style="border: 5px; background-color: aqua;">
-        <header class="jumbotron">
-            <h1 class="text-center"><strong>New York Times Search</strong></h1>
-            <!-- <h2 class="lead">Search Parameters</h2> -->
-        </header>
-        <!-- Row for Searching New York Times -->
+    <header class="jumbotron">
+        <h1 class="text-center"><strong>New York Times Search</strong></h1>
+        <!-- <h2 class="lead">Search Parameters</h2> -->
+    </header>
+    <!-- Row for Searching New York Times -->
+    <div class="container">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-10">
                 <br>
                 <div id="searchBox">
-                    <form>
+                    <form class="form form-group">
                         Search Term:<br>
-                        <input type="text" id="searchTerm">
+                        <input type="text" id="searchTerm" class="form-control">
                         <br>
                         Number of Records to Retrieve:<br>
-                        <select id="searchNumber">
+                        <select readonly id="searchNumber" class="form-control">
                             <option value="1">1</option>
                             <option value="5">5</option>
                             <option value="10">10</option>
                         </select>
                         <br>
                         Start Year (optional):
-                        <input type="number" id="start">
+                        <input type="number" id="start" class="form-control">
                         <br>
                         End Year (optional):
-                        <input type="number" id="End">
+                        <input type="number" id="end" class="form-control">
                         <br>
-                        <input type="submit" value="Search" id="searchbtn">
-                        <br>
-                        <input type="submit" value="Clear results" id="clearbtn">
+                        <input type="submit" value="Search" id="searchbtn" class="btn btn-primary">
+                        <input type="submit" value="Clear results" id="clearbtn" class="btn btn-primary">
                     </form>
-
                 </div>
             </div>
         </div>
-        <div class="topArticles" style="border: 5px; background-color: burlywood;">
+        <div class="row">
+            <div class="col-sm-10">
+                <div class="topArticles">
+                </div>
+            </div>
         </div>
-
+    </div>
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -62,4 +64,5 @@
         <script src="assets/api.js"></script>
         <script src="assets/script.js"></script>
 </body>
+
 </html>

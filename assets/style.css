@@ -1,0 +1,32 @@
+.result {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.title-row {
+    display: flex;
+}
+
+.index {
+    padding: 0 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.title {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.author {
+    font-style: italic;
+}
+
+#searchBox {
+}
