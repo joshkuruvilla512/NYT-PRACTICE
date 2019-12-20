@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="searchContainer">
         <div id="searchBox">
             <form action="/action_page.php">
                 Search Term:<br>
@@ -26,10 +26,10 @@
                 </select>
                 <br>
                 Start Year (optional):
-                <input type="text" id="start">
+                <input type="number" id="start">
                 <br>
                 End Year (optional):
-                <input type="text" id="End">
+                <input type="number" id="End">
                 <br>
                 <input type="submit" value="Search" id="searchbtn">
                 <br>
@@ -40,6 +40,10 @@
 
 
 
+
+    </div>
+    <div class="topArticles">
+        <div id="resultsBox"></div>
 
     </div>
 
