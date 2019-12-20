@@ -21,8 +21,8 @@ function setResults(searchTerm, numResults, startYear, endYear) {
 }
 
 // Event Listener
-$("#searchBtn").on("click", function (event) {
-
+$("#searchbtn").on("click", function (event) {
+    console.log("IN SEARCH");
     // Prevent default on button click
     event.preventDefault();
 
@@ -33,4 +33,4 @@ $("#searchBtn").on("click", function (event) {
     var end = $("#end").val();
 
     setResults(searchTerm, searchNumber, start, end);
-}
+});
