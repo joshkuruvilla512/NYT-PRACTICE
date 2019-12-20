@@ -12,7 +12,11 @@
 </head>
 
 <body>
-    <div class="container">
+    <header class="jumbotron">
+        <h1 class="display-3">New York Times Search</h1>
+        <!-- <h2 class="lead">Search Parameters</h2> -->
+    </header>
+    <div class="searchContainer" style="border: 5px; background-color: aqua;">
         <div id="searchBox">
             <form action="/action_page.php">
                 Search Term:<br>
@@ -26,10 +30,10 @@
                 </select>
                 <br>
                 Start Year (optional):
-                <input type="text" id="start">
+                <input type="number" id="start">
                 <br>
                 End Year (optional):
-                <input type="text" id="End">
+                <input type="number" id="End">
                 <br>
                 <input type="submit" value="Search" id="searchbtn">
                 <br>
@@ -40,6 +44,18 @@
 
 
 
+        <div id="resultDiv">
+        </div>
+
+    </div>
+    <div class="articlesContainer" style="border: 5px; background-color: burlywood;">
+        <div id="resultsBox"></div>
+        <form action="/action_page.php">
+
+
+
+
+        </form>
 
     </div>
 
