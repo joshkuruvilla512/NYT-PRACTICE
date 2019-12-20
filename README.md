@@ -4,3 +4,13 @@
 Here is the reference of what we are to make: http://nytarticle-search-fsf.herokuapp.com/
 
 This is where our website is located: https://joshkuruvilla512.github.io/NYT-PRACTICE/
+
+SearchBox
+SearchTerm
+searchNumber
+start
+end
+searchBtn
+clearBtn
+
+articlesDiv
