@@ -4,7 +4,7 @@ function setResults(searchTerm, numResults, startYear, endYear) {
     let results = getArticleInfo(searchTerm, numResults, startYear, endYear);
 
     // Update the HTML with the result Data from
-    let articleDiv = $("#articlesDiv");
+    let articleDiv = $("#resultDiv");
     articleDiv.empty();
     for (let i=0; i<results.length; i++) {
         let resultDiv = $("<div>").addClass("result");
