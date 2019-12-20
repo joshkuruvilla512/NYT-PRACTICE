@@ -37,8 +37,9 @@ function getArticleInfo(search, limit, startYear, endYear) {
         console.log(response);
         let results = response.response.docs;
         let articleDiv = $(".topArticles");
+        $("#results-heading").text(limit + " result(s) found");
+        // Empty the div of previous contents
         articleDiv.empty();
-
         for (let i = 0; i < limit; i++) {
             buildResult(i, results[i], articleDiv);
         }

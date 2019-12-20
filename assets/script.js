@@ -18,3 +18,9 @@ $("#searchbtn").on("click", function (event) {
 
     setResults(searchTerm, searchNumber, start, end);
 });
+
+$("#clearbtn").on("click", function(event){
+    event.preventDefault();
+    $("#results-heading").text("");
+    $(".topArticles").empty();
+});
