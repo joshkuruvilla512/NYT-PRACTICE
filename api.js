@@ -3,6 +3,15 @@
 // startYear: Year to start looking for articles
 // endYear: 
 function getArticleInfo(search, limit, startYear, endYear) {
+    if (!limit) {
+        limit = 1;
+    }
+    if (!startYear) {
+        startYear = 2019;
+    }
+    if (!endYear) {
+        endYear = 2019;
+    }
 
     let startDate = startYear + "0101";
     let endDate = endYear + "1231";
@@ -35,5 +44,5 @@ function getArticleInfo(search, limit, startYear, endYear) {
         }
         return ret;
     });
-    return null;
+    return [];
 }
