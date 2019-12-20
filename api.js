@@ -35,5 +35,5 @@ function getArticleInfo(search, limit, startYear, endYear) {
         }
         return ret;
     });
-    return null;
+    return [];
 }
