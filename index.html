@@ -12,6 +12,38 @@
 </head>
 
 <body>
+    <div class="container">
+        <div id="searchBox">
+            <form action="/action_page.php">
+                Search Term:<br>
+                <input type="text" id="searchTerm">
+                <br>
+                Number of Records to Retrieve:<br>
+                <select id="myList" id="searchNumber">
+                    <option value="1">1</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                </select>
+                <br>
+                Start Year (optional):
+                <input type="text" id="start">
+                <br>
+                End Year (optional):
+                <input type="text" id="End">
+                <br>
+                <input type="submit" value="Search" id="searchbtn">
+                <br>
+                <input type="submit" value="Clear results" id="clearbtn">
+            </form>
+
+        </div>
+
+
+
+
+    </div>
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
